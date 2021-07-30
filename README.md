@@ -10,8 +10,10 @@ You probably want to put that in a crontab entry, for periodic refreshing of the
 
 *Compile and run*
 
+```console
 make emlimport
 ./emlimport /mnt/synced/s3bucket_mail /mnt/mail/emlfiles
+```
 
 You can run the above emlimport command repeatedly with the given input, and
 corresponding output directory (directly after doing an aws s3 sync) to convert any newly synced files to .eml files in the output directory.
@@ -20,6 +22,6 @@ A critbit file is placed in /mnt/mail/emlfiles as critlist.txt and is autogenera
 
 *Thunderbird usage*
 
-Use the extension called ImportExport NG, and select input from entire directory. It will read each .eml file and place it into your Inbox or the selected mail folder.
+Use the extension called ImportExportTools NG, and use a right-click to select Import all messages from a directory, then just from the directory. It will read each .eml file and place it into your Inbox or the selected mail folder.
 
 
