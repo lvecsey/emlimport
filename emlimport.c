@@ -58,6 +58,9 @@ int main(int argc, char *argv[]) {
 
   critlist = (critbit0_tree) { .root = NULL };
 
+  line = NULL;
+  len = 0;
+
   fp = fopen(crit_fn, "r");
   if (fp != NULL) {
   
